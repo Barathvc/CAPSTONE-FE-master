@@ -7,7 +7,7 @@ export default defineConfig({
     proxy: {
       // assuming your backend endpoints start with /api
       '/api': {
-        target: 'https://capstone-be-master.onrender.com',  // your Express server
+        target: 'http://localhost:3000',  // your Express server
         changeOrigin: true,
         secure: false,  // if you're using http during development, set this to false
         rewrite: (path) => path.replace(/^\/api/, '')
