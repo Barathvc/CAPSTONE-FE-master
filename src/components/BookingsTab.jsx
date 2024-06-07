@@ -48,7 +48,7 @@ const BookingsTab = () => {
       });
 
       if (result.isConfirmed) {
-        await axios.put(`https://capstone-be-den4.onrender.com/api/bookings/${bookingId}`, { status: 'Cancelled' });
+        await axios.put(`https://capstone-be-den4..com/api/bookings/${bookingId}`, { status: 'Cancelled' });
         // After cancellation, refetch the bookings to update the UI
         fetchUserBookings();
         Swal.fire('Cancelled!', 'Your booking has been cancelled.', 'success');
